@@ -19,9 +19,26 @@
   </head>
 
   <body>
-    <div data-aos="flip-up" data-aos-delay="200" class="navbar">
+    <!-- 導覽列 -->
+    <div data-aos="flip-up" data-aos-delay="500" class="navbar">
       <h1>泰山高中電子科畢業專題－智慧時鐘</h1>
       <p id="MyClockDisplay" class="clock" onload="showTime()"></p>
+    </div>
+    <!-- 連線狀態欄 -->
+    <div class="connectTable">
+      <div class="search-box">
+        <button class="btn-search" onclick="searchOnclick()">
+          <i class="fas fa-search"></i>
+        </button>
+        <input
+          type="text"
+          class="input-search"
+          id="IPAdress"
+          placeholder="請輸入連線IP"
+          onkeydown="if(event.keyCode == 13){searchOnclick()}"
+        />
+      </div>
+      <p>連線狀態：<span id="ConnectStatus"></span></p>
     </div>
     <div class="main-container">
       <div class="item item1" data-aos="">
@@ -30,25 +47,25 @@
       <div class="item item2" data-aos="">
         <button type="button" onclick='alert("功能2")'>功能2</button>
       </div>
-      <div class="item item3" data-aos="">
+      <div class="item item3" ata-aos-delay="800" data-aos="">
         <button type="button" onclick='alert("功能3")'>功能3</button>
       </div>
-      <div class="item item4" data-aos="">
+      <div class="item item4" data-aos-delay="800" data-aos="">
         <button type="button" onclick='alert("功能4")'>功能4</button>
       </div>
-      <div class="item item5" data-aos="">
+      <div class="item item5" data-aos-delay="800" data-aos="">
         <button type="button" onclick='alert("功能5")'>功能5</button>
       </div>
-      <div class="item item6" data-aos="">
+      <div class="item item6" data-aos-delay="800" data-aos="">
         <button type="button" onclick='alert("功能6")'>功能6</button>
       </div>
-      <div class="item item7" data-aos="">
+      <div class="item item7" data-aos-delay="800" data-aos="">
         <button type="button" onclick='alert("功能7")'>功能7</button>
       </div>
-      <div class="item item8" data-aos="">
+      <div class="item item8" data-aos-delay="800" data-aos="">
         <button type="button" onclick='alert("功能8")'>功能8</button>
       </div>
-      <div class="item item9" data-aos="">
+      <div class="item item9" data-aos-delay="800" data-aos="">
         <button type="button" onclick='alert("功能9")'>功能9</button>
       </div>
     </div>

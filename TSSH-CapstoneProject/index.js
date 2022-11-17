@@ -38,3 +38,14 @@ itemDataset.forEach((index) => {
     index.dataset.aos = "fade-right";
   }
 });
+
+/*連線功能*/
+function searchOnclick() {
+  let IPAdress = document.getElementById("IPAdress");
+  let Status = document.getElementById("ConnectStatus");
+  if (IPAdress.value != "") {
+    Status.innerHTML = "已連線";
+  } else {
+    Status.innerHTML = "未連線";
+  }
+}
