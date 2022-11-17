@@ -48,7 +48,7 @@
 
 /* 搜尋欄位 */
 .search-box {
-  margin-left: 30px;
+  margin-left: 50px;
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -86,7 +86,7 @@
   right: 0px;
   color: #ffffff;
   background-color: transparent;
-  pointer-events: painted;
+  pointer-events: none;
 }
 .btn-search:focus ~ .input-search {
   width: 300px;
@@ -115,13 +115,6 @@
   text-align: center;
   color: #492645;
   border: 1px solid #000;
-}
-
-.item:hover {
-  transform: scale(1.1);
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-  box-shadow: 2px 3px 10px 5px gray;
 }
 
 @media screen and (max-width: 760px) {
@@ -153,7 +146,7 @@
   .main-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 10px;
+    padding: 5px;
     row-gap: 20px;
   }
 
