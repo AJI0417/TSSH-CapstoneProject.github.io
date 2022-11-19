@@ -19,11 +19,6 @@
   </head>
 
   <body>
-    <!-- 導覽列 -->
-    <div data-aos="flip-up" data-aos-delay="500" class="navbar">
-      <h1>泰山高中電子科畢業專題－智慧時鐘</h1>
-      <p id="MyClockDisplay" class="clock" onload="showTime()"></p>
-    </div>
     <!-- 連線狀態欄 -->
     <div class="connectTable">
       <div class="search-box">
@@ -39,6 +34,11 @@
         />
       </div>
       <p>連線狀態：<span id="ConnectStatus"></span></p>
+    </div>
+    <!-- 導覽列 -->
+    <div data-aos="flip-up" data-aos-delay="500" class="navbar">
+      <h1>泰山高中電子科畢業專題－智慧時鐘</h1>
+      <p id="MyClockDisplay" class="clock" onload="showTime()"></p>
     </div>
     <div class="main-container">
       <div class="item item1" data-aos="">
@@ -69,6 +69,7 @@
         <button type="button" onclick='alert("功能9")'>功能9</button>
       </div>
     </div>
+    <div class="footer">CopyRight &copy Aji</div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
     <script>
