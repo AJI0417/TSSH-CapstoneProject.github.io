@@ -22,8 +22,8 @@
     <!-- 連線狀態欄 -->
     <div class="connectTable">
       <div class="search-box">
-        <button class="btn-search" onclick="searchOnclick()">
-          <i class="fas fa-search"></i>
+        <button class="btn-search">
+          <i class="fas fa-wifi"></i>
         </button>
         <input
           type="text"
@@ -31,6 +31,7 @@
           id="IPAdress"
           placeholder="請輸入連線IP"
           onkeydown="if(event.keyCode == 13){searchOnclick()}"
+          onclick="searchOnclick()"
         />
       </div>
       <p>連線狀態：<span id="ConnectStatus"></span></p>
